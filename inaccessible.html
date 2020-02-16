@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+        <link href="css/inaccessible.css" rel="stylesheet" >
+        <script type='text/javascript' src='js/script.js'></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="main-nav">
+                <div class="main-nav__menu-list">
+                    <span class="main-nav__menu-item"><a href="#about-section">About</a></span>
+                    <span class="main-nav__menu-item"><a href="#contact-section">Contact</a></span>
+                    <span class="main-nav__menu-item"><a href="#visit-section">Visit</a></span>
+                </div>
+            </div>
+            <form class="search-form">
+                <input id="search" class="search__input" name="search">
+                <span class="btn" id="search__button">Search</button>
+            </form>
+        </div>
+        <div class="main">
+            <div class="hero-banner">
+                <div class="h1 banner__title">Accessibility <strong>Cheatsheet</strong></div>
+                <img src="images/cotb-accessibility-image2.png" class="banner__image"></img>
+            </div>
+            <div id="about-section" class="section">
+                <div class="h2">What is Web Accessibility?</div>
+                Web accessibility means that people with disabilities can use the web equally.
+                <div class="h2">Web Accessibility Guidelines</div>
+                <div class="h3">Section 508</div>
+                <p>
+                    Section 508 is a federal law that requires all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities.
+                </p>
+                <div class="h3">WCAG 2.1</div>
+                <p>The Web Content Accessibility Guidelines are a series of internationally recognized and adopted standards produced by the World Wide Web Consortium (W3C) for improving accessibility.</p>
+                <div class="h4">Pour Principles</div>
+                Perceivable
+                <div class="indent">Users must be able to perceive the information being presented</div>
+                Operable
+                <div class="indent">Users must be able to operate the interface</div>
+                Understandable
+                <div class="indent">Users must be able to understand the information as well as the operation of the user interface</div>
+                Robust
+                <div class="indent">Users must be able to access the content as technologies advance</div>
+
+
+                <div class="h4">Conformance Levels</div>
+                <table class="conformance-table">
+                        <tr>
+                            <td><strong>Level</strong></td>
+                            <td><strong>Conformance Type</strong></td>
+                            <td><strong>Description</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>A</strong></td>
+                            <td>Minimum</td>
+                            <td>The most basic web accessibility features</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AA</strong></td>
+                            <td>Mid-range</td>
+                            <td>Deals with the biggest and most common barriers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AAA</strong></td>
+                            <td>Highest</td>
+                            <td>The highest level of web accessibility</td>
+                        </tr>
+                </table>
+            </div>
+            <div id="contact-section" class="section">
+                <div class="h2">Contact</div>
+                <form id="contact-form" class="contact-form" autocomplete="off" onsubmit="submitContactForm()">
+                    <div id="error-messages" class="error-messages"></div>
+                    <span class="contact-form__label">Name</span>
+                    <input id="name" class="contact-form__input">
+
+                    <span for="message" class="contact-form__label">Message</span>
+                    <textarea id="message" class="contact-form__input" rows="10"></textarea>
+
+                    <span class="contact-form__label">Email</span>
+                    <input id="email" class="contact-form__input">
+
+                    <span class="contact-form__label">Phone</span>
+                    <input class="contact-form__input">
+   
+                    <input type="radio" name="phone-type" value="home"> Home
+                    <input type="radio" name="phone-type" value="work"> Work
+                    <input type="radio" name="phone-type" value="cell"> Cell
+                    <br/>
+                    <button id="submit-btn" class="btn contact-form__submit" form="contact-form" type="submit" value="Submit">GO!</button>
+                </form>
+            </div>
+            <div id="visit-section" class="section">
+                <div class="h2">Visit Us</div>
+                    <iframe width="100%" height="500" id="map" src="https://maps.google.com/maps?q=One%20Ocean&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <section id="resources-section" class="section">
+                <div class="h4">Resources</div>
+                <div class="h4">
+                    <div class="indent"><a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG Quick Reference</a></div>
+                    <div class="indent"><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g">A11ycasts with Rob Dodson</a></div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">© 2019 Charlene Carver</div>
+    </body>
+</html>
